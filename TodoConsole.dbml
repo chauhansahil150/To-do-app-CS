@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CodeQ" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-GF9KG9T\sqlexpress;Initial Catalog=CodeQ;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="TodoConsole.Properties.Settings" SettingsPropertyName="CodeQConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Todo" Member="Todos">
+    <Type Name="Todo">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsDone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
